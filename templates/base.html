@@ -11,14 +11,8 @@
     <title>Hello, world!</title>
   </head>
   <body>
-    <div class="card col-10 mx-auto mt-5 p-3">
-        <ul>
-            {% for data in lists %}
-                <li>{{ data.title }}</li>
-            {% endfor %}
-        </ul>
-    </div>
-
+    {% block content %}
+    {% endblock %}
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
