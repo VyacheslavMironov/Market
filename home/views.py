@@ -2,10 +2,7 @@ from django.shortcuts import render, HttpResponse
 
 # Create your views here.
 def login(request):
-    if request.method == "POST":
-        email = request.POST["input_email"]
-        password = request.POST["input_password"]
-    return render(request, "index.html")
+    return render(request, "login.html")
 
 def registration(request):
     if request.method == "POST":
